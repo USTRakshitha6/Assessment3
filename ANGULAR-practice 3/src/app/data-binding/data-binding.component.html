@@ -1,0 +1,12 @@
+<!-- <p>data-binding works!</p> -->
+<h1 [class]="textClasses">{{name}}</h1>
+<h1 [class.bg.danger]="redcolor"[class.bg-success]="!redcolor">{{5+5}}</h1>
+<p [style.background]="paragraphStyle ? 'red' : 'blue'"[style.padding]='padding'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa iusto reprehenderit nam debitis modi incidunt et ut quia eius accusantium, sapiente, totam praesentium architecto aspernatur, veritatis sint natus. Aperiam, alias?</p>
+</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>[attr.colspan]="colspan</th>
+        </tr>
+    </thead>
+</table>

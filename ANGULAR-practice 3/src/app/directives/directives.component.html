@@ -1,0 +1,26 @@
+<!-- <p>directives works!</p> -->
+<!-- <ul>
+    <li *ngfor='let i of  users'>{{i.city}}</li>
+</ul> -->
+<div class="container">
+    <div *ngIf="condition" class="alert alert-success">user removed successfully</div>
+    <table class="table table-hover table-bordered mt-5">
+    <thead class="thead-dark">
+        <tr>
+            <th>name</th>
+            <th>city</th>
+            <th>id</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let user of users'>
+            <td>{{user.name}}</td>
+            <td>{{user.city}}</td>
+            <td>{{user.id}}</td>
+            <td><button class="btn btn-outline-danger"
+                    (click)='removeUser(user)'>remove</button></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+  <!-- <div *ngIf='condition'>condition is true</div>  -->
