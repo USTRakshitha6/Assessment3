@@ -1,0 +1,37 @@
+<div class="container">
+    
+    <div *ngIf="condition" class="alert alert-success alert alert-dismissible" ><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+
+        removed successfully</div>>
+
+        <ul>
+                <li *ngFor='let i of users'>{{i.city}}</li>
+            </ul>
+            <table class=" table table-bordered mt-5 table-hover ">
+                <thead class="thead-dark">
+                    
+                <tr>
+             <th>id</th>
+             <th>name</th>
+             <th>city</th>
+             <th>Delete</th>
+             <!-- <th>Insert</th> -->
+            </tr>
+            </thead>
+            
+            <tbody >
+            <tr *ngFor='let user of users'>
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.city}}</td>
+                <td><button class="btn btn-outline-danger" 
+                    (click)= 'removeuser(user)'>remove</button></td>
+                    <!-- <td><button class="btn btn-outline-danger" 
+                        (click)= 'insert(user)'>insert</button></td> -->
+            </tr>
+            </tbody>
+            </table>
+            
+</div>
+<!-- <div *ngIf='condition'>Condition is true</div> -->
+

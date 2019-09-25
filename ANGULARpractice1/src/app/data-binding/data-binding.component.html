@@ -1,0 +1,52 @@
+<h1 [class]="textclasses">{{name}}</h1>   <!-- this is called as interpolation-->
+<h1>5+5</h1>
+<h1 [class.bg-danger]="redcolor"[class.bg-success]="!redcolor">{{5+5}}</h1>
+<img [src]="imgURL" alt="">  <!--property binding-->
+ <!-- <img src="{{imgURL}}" alt="">  it is sring interpolation    we can't use property binding and interpolation at time -->
+ <p [style.background]="parastyle ? 'red':'blue'"[style.padding]='padding'>lorem</p>
+ <table class="table table-bordered">
+     <thead>
+         <tr>
+             <th [attr.colspan]="columnspan">students</th>   <!-- we use attribute binding here-->
+         </tr>
+     </thead>
+     <tbody>
+         p;
+         <tr>
+             <td>1</td>
+             <td>laxmi</td>
+         </tr>
+         <tr>
+            <td>2</td>
+            <td>jaya</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>shree</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>deepa</td>
+        </tr>
+     </tbody>
+ </table>
+ <h1 [class]="myclasses">{{name1}}</h1>
+ <div class="col-md-4 offset-md-4 card card-body mt-5">
+ <form action="" >
+     <label for="">Name</label>
+     <input type="text" name="name" id="" [class]="myclass"><br>
+     <div class=" form-group">
+         <label for="">password</label>
+         <input type="password" name="" id="" class="form-control">
+     </div>
+     <div class="btn-group">
+      <button class="btn btn-success" >submit</button>
+      <button class="btn btn-primary" >reset</button>
+    </div>
+ </form>
+</div>
+ <div class="form-group">
+   <label for=""></label>
+   <input type="file" class="form-control-file" name="" id="" placeholder="" aria-describedby="fileHelpId">
+   <small id="fileHelpId" class="form-text text-muted">Help text</small>
+ </div>
