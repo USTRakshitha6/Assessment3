@@ -1,0 +1,20 @@
+<table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>taskname</th>
+                <th>delete</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = 'let n of array, index as i'>
+                <td >{{i+1}}</td>
+                <td>{{n.taskname}}</td>
+                <td><button type="danger" class = "btn btn-danger" (click) = 'delete(i)'>Delete</button></td>
+                
+            </tr>
+            
+        </tbody>
+    </table>
+    
