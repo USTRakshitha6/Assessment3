@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numberValue= 10;
+        var numberValue1='10';
+        var fruits=['apple','pinapple'];
+        var num=null;
+        if(numberValue===numberValue1)
+        {
+            console.log("equal");
+        }else{
+            console.log("inequal");
+        }
+        console.log("**************************");
+        var typeofNumber =typeof numberValue;
+        var typeofNumber1=typeof numberValue1;
+        var typeoffruits=typeof fruits;
+        var typeofnum=typeof num;
+        console.log(typeofNumber);
+        console.log(typeofNumber1);
+        console.log(typeoffruits);
+        console.log(typeofnum);
+        console.log("************************************");
+        var age = 21;
+        var checkAge=(age>21)?'Greater':(age===21)?'Equal':'lesser';
+        console.log(checkAge);
+        console.log("###########################################");
+        var employees=[
+            {
+                name : 'suchi',
+                age : 22,
+            },
+            {
+                name : 'kavya',
+                age : 19,
+            },
+            {
+                name : 'hema',
+                age : 20,
+            }
+        ];
+        for(var i=0;i<employees.length;i++)
+        {
+            console.log(employees[i]);
+        }
+        console.log("*******************************");
+        var hobbies=['playing','danceing','reading','writing'];
+        for(var value of hobbies){
+            console.log('hobbies using loop'+" "+ value);
+    
+        }
+        console.log("*******************************");
+        var students=['sissi','dfkm','dhhg'];
+        for(var index in students)
+        {
+            console.log('students'+" "+students[index]);
+        }
+    
+
+    </script>
+</body>
+</html>

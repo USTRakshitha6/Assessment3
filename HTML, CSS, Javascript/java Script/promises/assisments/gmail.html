@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin-left:25%;
+            margin-left: 50%;
+        }
+        </style>
+</head>
+<body>
+    <legend>
+        <fieldset>
+            <form action="welcome.html" name="letscheck" method="GET">
+                <div>
+                    <label for="">username</label>
+                </div>
+                <div>
+                    <input onkeyup="validateForm()" name="uname" type="text" required>
+                </div>
+                <div>
+                    <label for=""> password </label>
+                </div>
+                <div>
+                    <input onkeyup="validateForm()" name="password"   type="password" required>
+                </div>
+                <div>
+                    <label for="">confirm password</label>
+                </div>
+                <div>
+                    <input onkeyup="validateForm()" type="password" name="cpsw" required>
+                </div>
+                    
+                <div>
+                    <input type="submit" name="loginSubmit" value="login">
+                </div>
+            </form>
+        </fieldset>
+    </legend>
+    <script src="/promises/assisments/gmail.js"></script>
+</body>
+</html>
